@@ -1,7 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr-fr">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci Photographe",
+        "image": [
+          "./assets/images/slider/ryoji-iwata-desktop.webp",
+          "./assets/images/slider/nicholas-green-desktop.webp",
+          "./assets/images/slider/edward-cisneros-desktop.webp"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "58 avenue alasace lorraine",
+          "addressLocality": "Bordeaux",
+          "addressRegion": "Aquitaine",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Nina Carducci"
+        },
+        "telephone": "0556677889",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "10:00",
+            "closes": "19:00"
+          }
+        ],
+        "priceRange": "$$"
+      }
+    </script>
+    <meta property="og:url" content="https://ninacarducci.github.io/" />
+    <meta property="og:title" content="Nina Carducci Photographe" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Nina Carducci est une photographe de la région de Bordeaux et en Île-de-France pour tous les types d'évenements. Elle couvre : les mariages, les évenements d'entreprise, des shootings de particuliers. Elle propose également des retouches de photos pour des rendus professionnels et des albums personnalisé"
+    />
+    <meta property="author" content="Nina Carducci" />
+    <meta property="og:image" content="./assets/images/nina.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@NinaCarducci" />
+    <meta name="twitter:creator" content="@NinaCarducci" />
+    <meta name="twitter:title" content="Nina Carducci Photographe" />
+    <meta
+      name="twitter:description"
+      content="Nina Carducci est une photographe de la région de Bordeaux et en Île-de-France pour tous les types d'évenements. Elle couvre : les mariages, les évenements d'entreprise, des shootings de particuliers. Elle propose également des retouches de photos pour des rendus professionnels et des albums personnalisé"
+    />
+    <meta name="twitter:image" content="./assets/images/nina.webp" />
+
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -10,7 +70,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
+
     <script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -28,6 +88,10 @@
       name="description"
       content="Nina Carducci est une photographe de la région de Bordeaux et en Île-de-France pour tous les types d'évenements. Elle couvre : les mariages, les évenements d'entreprise, des shootings de particuliers. Elle propose également des retouches de photos pour des rendus professionnels et des albums personnalisé"
     />
+    <meta itemprop="streetAdress" content="58 avenue alsace lorraine" />
+    <meta itemprop="adressLocality" content="Bordeaux" />
+    <meta itemprop="adressRegion" content="Bordeaux" />
+    <meta itemprop="postalCode" content="33200" />
   </head>
   <body>
     <header class="top-header">
@@ -143,7 +207,7 @@
         />
       </div>
       <div id="about-me">
-        <h2 class="about-me__title">À propos de moi</h2>
+        <h2 class="about-me__title">À propos de la photographe</h2>
         <p class="about-me__introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
           prédestiné. Saisir un moment, une émotion, une situation, un endroit,
@@ -245,7 +309,7 @@
       </div>
     </div>
     <div id="services">
-      <h2 class="title">Mes services</h2>
+      <h2 class="title">Mes services de photographie</h2>
       <div class="container">
         <div class="service">
           <div class="service__description">
