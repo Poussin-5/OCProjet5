@@ -98,18 +98,24 @@
       <h1 class="name">Nina Carducci <br />Photographe</h1>
       <nav class="nav">
         <ul>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#gallery">Galerie</a></li>
-          <li><a href="#services">Service</a></li>
+          <li>
+            <a href="#about">À propos</a>
+          </li>
+          <li>
+            <a href="#gallery">Galerie</a>
+          </li>
+          <li>
+            <a href="#services">Service</a>
+          </li>
           <li><a href="#contact">Contact</a></li>
           <li>
             <a
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              ><i class="fa-brands fa-instagram fa-2xl"></i
-              ><span class="off-screen">Instagram</span></a
-            >
+              aria-label="instagram"
+              ><i class="fa-brands fa-instagram fa-2xl"></i>
+            </a>
           </li>
         </ul>
       </nav>
@@ -120,69 +126,12 @@
         class="carousel slide"
         data-bs-ride="carousel"
       >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./assets/images/slider/ryoji-iwata-desktop.webp"
-              srcset="
-                ./assets/images/slider/ryoji-iwata-mobile.webp   650w,
-                ./assets/images/slider/ryoji-iwata-desktop.webp 1400w
-              "
-              sizes="1400px"
-              class="d-block w-100 index-img"
-              alt="photo d'un homme traversant un passage piéton"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./assets/images/slider/nicholas-green-desktop.webp"
-              srcset="
-                ./assets/images/slider/nicholas-green-mobile.webp   650w,
-                ./assets/images/slider/nicholas-green-desktop.webp 1400w
-              "
-              sizes="1400px"
-              class="d-block w-100 index-img"
-              alt="photo d'un homme dans une foule d'un évenements"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./assets/images/slider/edward-cisneros-desktop.webp"
-              srcset="./assets/images/slider/edward-cisneros-mobile.webp 650w
-              ./assets/images/slider/edward-cisneros-desktop.webp 1400w"
-              sizes="1400px"
-              class="d-block w-100 index-img"
-              alt="photographie de mariage d'un couple"
-            />
-          </div>
-        </div>
         <button
           class="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
+          aria-label="photo précedente du caroussel"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -192,10 +141,71 @@
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
+          aria-label="prochaine photo du caroussel"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              srcset="
+                ./assets/images/slider/ryoji-iwata-mobile.webp   650w,
+                ./assets/images/slider/ryoji-iwata-desktop.webp 1400w
+              "
+              sizes="(max-width:650px) 650px 1400px"
+              class="d-block w-100 index-img"
+              alt="photo d'un homme traversant un passage piéton"
+              src="./assets/images/slider/ryoji-iwata-desktop.webp"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              loading="lazy"
+              srcset="
+                ./assets/images/slider/nicholas-green-mobile.webp   650w,
+                ./assets/images/slider/nicholas-green-desktop.webp 1200w
+              "
+              sizes="(max-width:650px) 650px 1200px"
+              class="d-block w-100 index-img"
+              alt="photo d'un homme dans une foule d'un évenements"
+              src="./assets/images/slider/nicholas-green-desktop.webp"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              loading="lazy"
+              srcset="./assets/images/slider/edward-cisneros-mobile.webp 650w
+              ./assets/images/slider/edward-cisneros-desktop.webp 1400w"
+              sizes="(max-width:650px) 650px 1400px"
+              class="d-block w-100 index-img"
+              alt="photographie de mariage d'un couple"
+              src="./assets/images/slider/edward-cisneros-desktop.webp"
+            />
+          </div>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="photo 1 du carousel"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="photo 2 du carousel"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="photo 3 du carousel"
+            ></button>
+          </div>
+        </div>
       </div>
     </div>
     <div id="about">
@@ -390,7 +400,6 @@
         </div>
         <div class="picture right">
           <img
-            class="index-img"
             loading="lazy"
             src="./assets/images/camera.webp"
             alt="photographie d'un appareil photo"
@@ -398,5 +407,6 @@
         </div>
       </div>
     </div>
+    <footer></footer>
   </body>
 </html>
